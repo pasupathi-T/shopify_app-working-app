@@ -1,0 +1,15 @@
+create a new shopify_app
+
+rails new app
+cd app
+echo "gem 'shopify_app'" >> Gemfile
+bundle install
+
+rails generate shopify_app -api_key=d580cdce442a3874d97cf488d6d7c016 -secret=b944e247d05af8e5e8c38b255c971251
+rake db:create
+rake db:migrate
+rails s
+
+
+
+
